@@ -84,7 +84,7 @@
 6.  **实验执行与指标采集**
     针对每组实验负载，分别运行以上5个方案，采集关键性能指标，并绘制图表。
     Spark作业执行记录如下：
-    ![pic/img_4.png](pic/img_4.png)
+    ![pic/img_4.png](pic/experiment.png)
 
 ### 3.4 实验结果与分析
 #### 矩阵规模和稠密度对不同指标的影响
@@ -182,7 +182,7 @@
 3.  Baseline/Broadcast：Baseline 无优化导致全量 Shuffle，Broadcast 仅适合小数据广播，规模 / 密度增大后通信 / 内存开销失控。
   
 ## 5 分工
-徐静蕾：master节点环境配置，block+broadcast和sysds_force实现，总执行时间分析及其图表生成
-施曼丽：worker节点环境配置，baseline和systemds实现，内存利用率分析，ppt制作
-祁佳馨：worker节点环境配置，block实现，cpu利用率分析，所有指标的图表生成
-李春秋：worker节点环境配置，broadcast实现，shuffle数据量分析，视频录制及文档填写
+- 徐静蕾：master节点环境配置，block+broadcast和sysds_force实现，总执行时间分析及其图表生成
+- 施曼丽：worker节点环境配置，baseline和systemds实现，内存利用率分析，ppt制作
+- 祁佳馨：worker节点环境配置，block实现，cpu利用率分析，所有指标的图表生成
+- 李春秋：worker节点环境配置，broadcast实现，shuffle数据量分析，视频录制及文档填写
